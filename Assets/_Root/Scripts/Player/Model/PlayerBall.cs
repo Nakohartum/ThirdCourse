@@ -14,7 +14,6 @@ namespace _Root.Scripts.Player
 
         public override void Move(float x, float y, float z)
         {
-            Debug.Log(new Vector3(x, y, z) * Speed);
             _rigidbody.AddForce(new Vector3(x, y, z) * Speed);
         }
     }
